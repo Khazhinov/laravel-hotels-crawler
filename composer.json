@@ -1,0 +1,37 @@
+{
+    "name": "khazhinov/laravel-hotels-crawler",
+    "keywords": ["laravel", "hotels"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Khazhinov Vladislav",
+            "email": "khazhinov@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Khazhinov\\HotelsCrawler\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.2",
+        "ext-json": "*",
+        "illuminate/contracts": "^6.0|^7.0",
+        "illuminate/http": "^6.0|^7.0",
+        "illuminate/log": "^6.0|^7.0",
+        "illuminate/support": "^6.0|^7.0",
+        "nesbot/carbon": "^2.0",
+        "symfony/http-kernel": "^4.3|^5.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Khazhinov\\HotelsCrawler\\HotelsCrawlerServiceProvider"
+            ],
+            "aliases":{
+                "HotelsCrawler": "Khazhinov\\HotelsCrawler\\Facades\\HotelsCrawler"
+            }
+        }
+    }
+}
